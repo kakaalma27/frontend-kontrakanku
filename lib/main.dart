@@ -26,7 +26,6 @@ import 'package:frontend_kontrakan/pages/home/wishlist_page.dart';
 import 'package:frontend_kontrakan/pages/sign_in_page.dart';
 import 'package:frontend_kontrakan/pages/sign_up_page.dart';
 import 'package:frontend_kontrakan/pages/splash_page.dart';
-import 'package:frontend_kontrakan/pages/home/detail_chat_page.dart';
 import 'package:frontend_kontrakan/pages/widget/tambah_alamat.dart';
 import 'package:frontend_kontrakan/providers/auth_provider.dart';
 import 'package:provider/provider.dart';
@@ -52,10 +51,8 @@ class MyApp extends StatelessWidget {
           '/check-email': (context) => CheckEmailPage(),
           '/sign-up': (context) => SignUpPage(),
           '/home': (context) => MainPage(),
-          '/detail-chat': (context) => DetailChatPage(),
           '/alamat': (context) => AlamatPage(),
           '/tambah-alamat': (context) => TambahAlamat(),
-
           '/detail-house': (context) => HouseDetail(),
           '/booking': (context) => BookingPage(),
           '/transaksi': (context) => TransaksiPage(),

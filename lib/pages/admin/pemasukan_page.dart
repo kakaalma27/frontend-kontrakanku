@@ -11,12 +11,12 @@ class PemasukanPage extends StatelessWidget {
         onPressed: () {
           Navigator.pop(context);
         },
-        color: primaryTextColor,
+        color: blackColor,
         icon: Icon(Icons.close),
       ),
       title: Text(
         'Pemasukan Manual',
-        style: primaryTextStyle.copyWith(fontSize: 18),
+        style: blackColorStyle.copyWith(fontSize: 18),
       ),
     );
   }

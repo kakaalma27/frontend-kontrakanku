@@ -8,7 +8,7 @@ class KeuanganPage extends StatelessWidget {
       centerTitle: true,
       title: Text(
         'Keuangan',
-        style: primaryTextStyle.copyWith(
+        style: blackColorStyle.copyWith(
           fontSize: 18,
         ),
       ),
@@ -17,7 +17,7 @@ class KeuanganPage extends StatelessWidget {
         onPressed: () {
           Navigator.pop(context);
         },
-        color: primaryTextColor,
+        color: blackColor,
         icon: Icon(Icons.close),
       ),
     );
@@ -48,7 +48,7 @@ class KeuanganPage extends StatelessWidget {
                 ),
                 Text(
                   'Target',
-                  style: primaryTextStyle.copyWith(
+                  style: blackColorStyle.copyWith(
                     fontSize: 16,
                     fontWeight: medium,
                   ),
@@ -72,7 +72,7 @@ class KeuanganPage extends StatelessWidget {
                 ),
                 Text(
                   'Pemasukan',
-                  style: primaryTextStyle.copyWith(
+                  style: blackColorStyle.copyWith(
                     fontSize: 16,
                     fontWeight: medium,
                   ),
