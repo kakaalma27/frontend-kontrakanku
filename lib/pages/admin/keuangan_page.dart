@@ -4,11 +4,11 @@ import 'package:frontend_kontrakan/theme.dart';
 class KeuanganPage extends StatelessWidget {
   Widget header(context) {
     return AppBar(
-      backgroundColor: bgColor1,
+      backgroundColor: bgColor3,
       centerTitle: true,
       title: Text(
         'Keuangan',
-        style: blackColorStyle.copyWith(
+        style: primaryTextStyle.copyWith(
           fontSize: 18,
         ),
       ),
@@ -17,7 +17,7 @@ class KeuanganPage extends StatelessWidget {
         onPressed: () {
           Navigator.pop(context);
         },
-        color: blackColor,
+        color: primaryTextColor,
         icon: Icon(Icons.close),
       ),
     );

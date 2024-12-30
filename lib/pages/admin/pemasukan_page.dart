@@ -5,13 +5,13 @@ import 'package:frontend_kontrakan/theme.dart';
 class PemasukanPage extends StatelessWidget {
   Widget header(context) {
     return AppBar(
-      backgroundColor: bgColor1,
+      backgroundColor: bgColor3,
       centerTitle: true,
       leading: IconButton(
         onPressed: () {
           Navigator.pop(context);
         },
-        color: blackColor,
+        color: primaryColor,
         icon: Icon(Icons.close),
       ),
       title: Text(

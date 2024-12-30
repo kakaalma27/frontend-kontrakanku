@@ -11,6 +11,7 @@ Color bgColor1 = Color(0xffF7F7F7);
 Color bgColor2 = Color(0xffD6D6D6);
 Color bgColor3 = Color(0xff1F1D2B);
 Color bgColor4 = Color(0xff171821);
+Color bgColor5 = Color(0xffEFEFEF);
 Color primaryTextColor = Color(0xffF1F0F2);
 Color secondaryTextColor = Color(0xff999999);
 Color subtitleColor = Color(0xff858585);
