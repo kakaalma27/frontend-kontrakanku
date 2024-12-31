@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:frontend_kontrakan/pages/admin/bantuan_page.dart';
 import 'package:frontend_kontrakan/pages/admin/keuangan_page.dart';
 import 'package:frontend_kontrakan/pages/admin/main_page_admin.dart';
 import 'package:frontend_kontrakan/pages/admin/kontrakan_page.dart';
@@ -74,6 +75,7 @@ class MyApp extends StatelessWidget {
           '/pemasukan-keuangan': (context) => PemasukanPage(),
           '/statement-keuangan': (context) => StatementPage(),
           '/penyewa': (context) => PenyewaPage(),
+          '/bantuan': (context) => BantuanPage(),
         },
       ),
     );

@@ -16,7 +16,7 @@ class PemasukanPage extends StatelessWidget {
       ),
       title: Text(
         'Pemasukan Manual',
-        style: blackColorStyle.copyWith(fontSize: 18),
+        style: primaryTextStyle.copyWith(fontSize: 18),
       ),
     );
   }
@@ -40,6 +40,7 @@ class PemasukanPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: bgColor3,
       appBar: header(context) as PreferredSizeWidget,
       body: content(),

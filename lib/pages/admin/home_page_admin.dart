@@ -101,21 +101,26 @@ class HomePageAdmin extends StatelessWidget {
             ),
           ),
           SizedBox(width: 25),
-          Column(
-            children: [
-              Image.asset(
-                'assets/bantuan.png',
-                width: 40,
-                height: 40,
-              ),
-              Text(
-                'Bantuan',
-                style: blackColorStyle.copyWith(
-                  fontSize: 12,
-                  fontWeight: light,
+          GestureDetector(
+            onTap: () {
+              Navigator.pushNamed(context, '/bantuan');
+            },
+            child: Column(
+              children: [
+                Image.asset(
+                  'assets/bantuan.png',
+                  width: 40,
+                  height: 40,
                 ),
-              )
-            ],
+                Text(
+                  'Bantuan',
+                  style: blackColorStyle.copyWith(
+                    fontSize: 12,
+                    fontWeight: light,
+                  ),
+                )
+              ],
+            ),
           ),
           SizedBox(width: 25),
           GestureDetector(
