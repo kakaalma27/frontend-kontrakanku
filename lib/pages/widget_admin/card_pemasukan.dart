@@ -22,7 +22,7 @@ class _CardPemasukanState extends State<CardPemasukan> {
         children: [
           Text(
             'Penyewa',
-            style: primaryTextStyle.copyWith(
+            style: blackColorStyle.copyWith(
               fontSize: 16,
               fontWeight: medium,
             ),
@@ -31,15 +31,15 @@ class _CardPemasukanState extends State<CardPemasukan> {
           Container(
             padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
             decoration: BoxDecoration(
-                color: bgColor1, borderRadius: BorderRadius.circular(12)),
+                color: bgColor5, borderRadius: BorderRadius.circular(12)),
             child: DropdownButtonFormField<String>(
               value: selectedPenyewa,
               hint: Text(
                 'Silahkan Pilih Penyewa',
                 style: subtitleTextStyle,
               ),
-              style: primaryTextStyle,
-              dropdownColor: bgColor1,
+              style: blackColorStyle,
+              dropdownColor: bgColor4,
               decoration: InputDecoration.collapsed(hintText: ''),
               items: ['Alma', 'Kaka', 'Kilua']
                   .map((penyewa) => DropdownMenuItem(
@@ -60,7 +60,7 @@ class _CardPemasukanState extends State<CardPemasukan> {
           // Metode Pembayaran Dropdown
           Text(
             'Metode pembayaran',
-            style: primaryTextStyle.copyWith(
+            style: blackColorStyle.copyWith(
               fontSize: 16,
               fontWeight: medium,
             ),
@@ -69,15 +69,15 @@ class _CardPemasukanState extends State<CardPemasukan> {
           Container(
             padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
             decoration: BoxDecoration(
-                color: bgColor1, borderRadius: BorderRadius.circular(12)),
+                color: bgColor5, borderRadius: BorderRadius.circular(12)),
             child: DropdownButtonFormField<String>(
               value: selectedMetode,
               hint: Text(
                 'Silahkan Pilih Metode',
                 style: subtitleTextStyle,
               ),
-              style: primaryTextStyle,
-              dropdownColor: bgColor1,
+              style: blackColorStyle,
+              dropdownColor: bgColor4,
               decoration: InputDecoration.collapsed(hintText: ''),
               items: ['Cash', 'Transfer']
                   .map((metode) => DropdownMenuItem(
@@ -98,7 +98,7 @@ class _CardPemasukanState extends State<CardPemasukan> {
           // Input Uang
           Text(
             'Terima Uang',
-            style: primaryTextStyle.copyWith(
+            style: blackColorStyle.copyWith(
               fontSize: 16,
               fontWeight: medium,
             ),
@@ -107,9 +107,9 @@ class _CardPemasukanState extends State<CardPemasukan> {
           Container(
             padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
             decoration: BoxDecoration(
-                color: bgColor1, borderRadius: BorderRadius.circular(12)),
+                color: bgColor5, borderRadius: BorderRadius.circular(12)),
             child: TextFormField(
-              style: primaryTextStyle,
+              style: blackColorStyle,
               decoration: InputDecoration.collapsed(
                 hintText: 'Uang Masuk',
                 hintStyle: subtitleTextStyle,
@@ -130,7 +130,7 @@ class _CardPemasukanState extends State<CardPemasukan> {
                   children: [
                     Text(
                       'Pilih Tanggal',
-                      style: primaryTextStyle.copyWith(
+                      style: blackColorStyle.copyWith(
                         fontSize: 16,
                         fontWeight: medium,
                       ),
@@ -154,14 +154,14 @@ class _CardPemasukanState extends State<CardPemasukan> {
                         padding:
                             EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                         decoration: BoxDecoration(
-                            color: bgColor1,
+                            color: bgColor5,
                             borderRadius: BorderRadius.circular(12)),
                         child: Text(
                           selectedDate != null
                               ? DateFormat('yyyy-MM-dd').format(selectedDate!)
                               : 'Pilih Tanggal',
                           style: selectedDate != null
-                              ? primaryTextStyle
+                              ? blackColorStyle
                               : subtitleTextStyle,
                         ),
                       ),
@@ -173,7 +173,7 @@ class _CardPemasukanState extends State<CardPemasukan> {
                   children: [
                     Text(
                       'Pilih Waktu',
-                      style: primaryTextStyle.copyWith(
+                      style: blackColorStyle.copyWith(
                         fontSize: 16,
                         fontWeight: medium,
                       ),
@@ -195,14 +195,14 @@ class _CardPemasukanState extends State<CardPemasukan> {
                         padding:
                             EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                         decoration: BoxDecoration(
-                            color: bgColor1,
+                            color: bgColor5,
                             borderRadius: BorderRadius.circular(12)),
                         child: Text(
                           selectedTime != null
                               ? selectedTime!.format(context)
                               : 'Pilih Waktu',
                           style: selectedTime != null
-                              ? primaryTextStyle
+                              ? blackColorStyle
                               : subtitleTextStyle,
                         ),
                       ),
@@ -224,7 +224,7 @@ class _CardPemasukanState extends State<CardPemasukan> {
                 // Submit action
               },
               style: TextButton.styleFrom(
-                backgroundColor: primaryColor,
+                backgroundColor: blackColor,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),

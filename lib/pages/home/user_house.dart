@@ -15,7 +15,7 @@ class UserHouse extends StatelessWidget {
       ),
       title: Text(
         'Detail Penyewaan',
-        style: primaryTextStyle.copyWith(fontSize: 18, fontWeight: semiBold),
+        style: primaryTextStyle.copyWith(fontSize: 18, fontWeight: medium),
       ),
       elevation: 0,
     );
@@ -26,7 +26,7 @@ class UserHouse extends StatelessWidget {
       child: Container(
         margin: EdgeInsets.all(defaultMargin),
         decoration: BoxDecoration(
-          color: bgColor2,
+          color: bgColor5,
           borderRadius: BorderRadius.circular(16),
         ),
         child: Column(

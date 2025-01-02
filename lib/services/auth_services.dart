@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http; // Import package http
 import 'package:frontend_kontrakan/models/user_models.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
 class AuthServices {
   String baseUrl = 'http://192.168.20.251:8000/api/auth';
 
@@ -38,18 +39,12 @@ class AuthServices {
       user.token = 'Bearer ' + data['access_token'];
       return user;
     } else {
-      // Menangkap pesan error dari respons server
       var errorMessage =
           jsonDecode(response.body)['message'] ?? 'Gagal Register';
       throw Exception(errorMessage);
     }
   }
-  Future<bool> isAuthenticated() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    String? token = prefs.getString('access_token');
 
-    return token != null && token.isNotEmpty;
-  }
   Future<UserModels> login({
     required String email,
     required String password,
@@ -73,6 +68,7 @@ class AuthServices {
       var data = jsonDecode(response.body)['data'];
       UserModels user = UserModels.fromJson(data['user']);
       user.token = 'Bearer ' + data['access_token'];
+      
       return user;
     } else {
       // Menangkap pesan error dari respons server
@@ -94,13 +90,21 @@ class AuthServices {
     );
 
     print(response.body);
-
     if (response.statusCode == 200) {
+      SharedPreferences prefs = await SharedPreferences.getInstance();
+      await prefs.remove('access_token');
       return true;
     } else {
       var errorMessage = jsonDecode(response.body)['message'] ?? 'Gagal Logout';
       throw Exception(errorMessage);
     }
+  }
+
+  Future<bool> isAuthenticated() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    String? token = prefs.getString('access_token');
+    print(token);
+    return token != null && token.isNotEmpty;
   }
 
   Future<UserModels> update({

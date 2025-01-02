@@ -43,6 +43,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(
           create: (context) => AuthProvider(),
         ),
+        
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

@@ -31,7 +31,10 @@ class AlamatPage extends StatelessWidget {
                 size: 24, // Ukuran ikon
                 color: blackColor, // Warna ikon, sesuaikan dengan tema Anda
               ),
-              SizedBox(width: 8), // Jarak antara ikon dan teks
+              SizedBox(
+                width: 8,
+                height: 8,
+              ), // Jarak antara ikon dan teks
               Text(
                 'Tambah Alamat',
                 style: blackColorStyle.copyWith(
@@ -108,27 +111,32 @@ class AlamatPage extends StatelessWidget {
     }
 
     return Scaffold(
-      backgroundColor: bgColor2,
+      backgroundColor: bgColor1,
       appBar: AppBar(
-        backgroundColor: bgColor4,
+        backgroundColor: bgColor3,
         centerTitle: true,
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          color: primaryTextColor,
+          icon: Icon(Icons.close),
+        ),
         title: Text(
           'Alamat Saya',
-          style: primaryTextStyle.copyWith(
-            fontSize: 18,
-          ),
+          style: primaryTextStyle.copyWith(fontSize: 18, fontWeight: medium),
         ),
         elevation: 0,
       ),
       body: Container(
-        padding: EdgeInsets.all(8.0),
+        padding: EdgeInsets.all(defaultMargin),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               'Alamat',
-              style: blackColorStyle.copyWith(
-                fontSize: 18,
+              style: secondaryTextStyle.copyWith(
+                fontSize: 16,
                 fontWeight: medium,
               ),
             ),

@@ -7,13 +7,11 @@ class BookingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     Widget header() {
       return AppBar(
-        backgroundColor: bgColor4,
+        backgroundColor: bgColor3,
         centerTitle: true,
         title: Text(
           'Booking',
-          style: primaryTextStyle.copyWith(
-            fontSize: 18,
-          ),
+          style: primaryTextStyle.copyWith(fontSize: 18, fontWeight: medium),
         ),
         elevation: 0,
       );

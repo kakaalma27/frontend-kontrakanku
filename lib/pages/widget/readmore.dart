@@ -7,7 +7,7 @@ class Readmore extends StatelessWidget {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 8.0),
       decoration: BoxDecoration(
-        color: bgColor2,
+        color: bgColor5,
         borderRadius: BorderRadius.circular(8.0),
       ),
       child: Column(

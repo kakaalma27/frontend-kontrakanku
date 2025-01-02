@@ -41,7 +41,7 @@ class PemasukanPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
-      backgroundColor: bgColor3,
+      backgroundColor: bgColor1,
       appBar: header(context) as PreferredSizeWidget,
       body: content(),
     );

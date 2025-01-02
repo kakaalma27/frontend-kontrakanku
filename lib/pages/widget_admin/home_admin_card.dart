@@ -104,7 +104,7 @@ class HomeAdminCard extends StatelessWidget {
                 width: double.infinity,
                 padding: EdgeInsets.symmetric(vertical: 8),
                 decoration: BoxDecoration(
-                  color: bgColor1,
+                  color: bgColor4,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(12),
                     topRight: Radius.circular(12),
@@ -113,7 +113,7 @@ class HomeAdminCard extends StatelessWidget {
                 alignment: Alignment.center,
                 child: Text(
                   title,
-                  style: blackColorStyle.copyWith(
+                  style: primaryTextStyle.copyWith(
                     fontSize: 17,
                     fontWeight: medium,
                   ),

@@ -4,7 +4,7 @@ import 'package:frontend_kontrakan/theme.dart';
 class HelpPage extends StatelessWidget {
   Widget header(BuildContext context) {
     return AppBar(
-      backgroundColor: bgColor4,
+      backgroundColor: bgColor3,
       centerTitle: true,
       leading: IconButton(
         onPressed: () {
@@ -15,7 +15,10 @@ class HelpPage extends StatelessWidget {
       ),
       title: Text(
         'Bantuan',
-        style: primaryTextStyle.copyWith(fontSize: 18),
+        style: primaryTextStyle.copyWith(
+          fontSize: 18,
+          fontWeight: medium,
+        ),
       ),
     );
   }

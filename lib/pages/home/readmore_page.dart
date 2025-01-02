@@ -36,7 +36,7 @@ class ReadmorePage extends StatelessWidget {
           hintStyle: secondaryTextStyle,
           prefixIcon: Icon(Icons.search, color: secondaryColor),
           filled: true,
-          fillColor: bgColor2,
+          fillColor: bgColor5,
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12.0),
             borderSide: BorderSide.none,

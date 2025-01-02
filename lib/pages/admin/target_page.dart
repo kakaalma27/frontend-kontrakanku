@@ -4,7 +4,7 @@ import 'package:frontend_kontrakan/theme.dart';
 class TargetPage extends StatelessWidget {
   Widget header(context) {
     return AppBar(
-      backgroundColor: bgColor1,
+      backgroundColor: bgColor4,
       centerTitle: true,
       leading: IconButton(
         onPressed: () {
@@ -27,7 +27,7 @@ class TargetPage extends StatelessWidget {
         children: [
           Text(
             'Total Kontrakan',
-            style: primaryTextStyle.copyWith(
+            style: blackColorStyle.copyWith(
               fontSize: 16,
               fontWeight: medium,
             ),
@@ -38,9 +38,9 @@ class TargetPage extends StatelessWidget {
           Container(
             padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
             decoration: BoxDecoration(
-                color: bgColor1, borderRadius: BorderRadius.circular(12)),
+                color: bgColor5, borderRadius: BorderRadius.circular(12)),
             child: TextFormField(
-              style: primaryTextStyle,
+              style: blackColorStyle,
               decoration: InputDecoration.collapsed(
                 hintText: 'Total Kontrakan',
                 hintStyle: subtitleTextStyle,
@@ -59,7 +59,7 @@ class TargetPage extends StatelessWidget {
         children: [
           Text(
             'Maxsimal Uang diDapatkan',
-            style: primaryTextStyle.copyWith(
+            style: blackColorStyle.copyWith(
               fontSize: 16,
               fontWeight: medium,
             ),
@@ -70,9 +70,9 @@ class TargetPage extends StatelessWidget {
           Container(
             padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
             decoration: BoxDecoration(
-                color: bgColor1, borderRadius: BorderRadius.circular(12)),
+                color: bgColor5, borderRadius: BorderRadius.circular(12)),
             child: TextFormField(
-              style: primaryTextStyle,
+              style: blackColorStyle,
               decoration: InputDecoration.collapsed(
                 hintText: 'Uang Kontrakan',
                 hintStyle: subtitleTextStyle,
@@ -92,7 +92,7 @@ class TargetPage extends StatelessWidget {
       child: TextButton(
         onPressed: () {},
         style: TextButton.styleFrom(
-          backgroundColor: primaryColor,
+          backgroundColor: blackColor,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
           ),
@@ -135,7 +135,7 @@ class TargetPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: bgColor3,
+      backgroundColor: bgColor1,
       appBar: header(context) as PreferredSizeWidget,
       body: content(),
     );

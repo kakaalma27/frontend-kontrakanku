@@ -22,7 +22,7 @@ class ProfilePage extends StatelessWidget {
 
     Widget headerAppBar(BuildContext context) {
       return AppBar(
-        backgroundColor: bgColor4,
+        backgroundColor: bgColor3,
         automaticallyImplyLeading: false,
         elevation: 0,
         toolbarHeight: 70,
@@ -30,7 +30,7 @@ class ProfilePage extends StatelessWidget {
           child: Container(
             padding: EdgeInsets.only(left: defaultMargin, right: defaultMargin),
             child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 SizedBox(
                   height: 10,
@@ -45,28 +45,29 @@ class ProfilePage extends StatelessWidget {
                 SizedBox(
                   width: 12,
                 ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Hallo, ${user.name?.split(' ')[0] ?? 'Guest'}',
-                      style: primaryTextStyle.copyWith(
-                        fontSize: 24,
-                        fontWeight: semiBold,
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        '${user.name?.split(' ')[0] ?? 'Guest'}',
+                        style: primaryTextStyle.copyWith(
+                          fontSize: 24,
+                          fontWeight: semiBold,
+                        ),
+                        overflow: TextOverflow.ellipsis,
                       ),
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                    Text(
-                      '@${user.username}',
-                      style: subtitleTextStyle.copyWith(
-                        fontSize: 16,
-                        fontWeight: medium,
+                      Text(
+                        '@${user.username}',
+                        style: subtitleTextStyle.copyWith(
+                          fontSize: 16,
+                          fontWeight: medium,
+                        ),
+                        overflow: TextOverflow.ellipsis,
                       ),
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
-                Spacer(),
                 IconButton(
                   icon: Icon(Icons.logout),
                   onPressed: () {

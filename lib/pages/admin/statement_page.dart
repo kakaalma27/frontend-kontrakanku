@@ -4,7 +4,7 @@ import 'package:frontend_kontrakan/theme.dart';
 class StatementPage extends StatelessWidget {
   Widget header(context) {
     return AppBar(
-      backgroundColor: bgColor1,
+      backgroundColor: bgColor4,
       centerTitle: true,
       leading: IconButton(
         onPressed: () {
@@ -59,7 +59,7 @@ class StatementPage extends StatelessWidget {
               children: [
                 Text(
                   'Terima Uang',
-                  style: primaryTextStyle.copyWith(
+                  style: blackColorStyle.copyWith(
                     fontSize: 18,
                     fontWeight: semiBold,
                   ),
@@ -105,7 +105,7 @@ class StatementPage extends StatelessWidget {
             children: [
               Text(
                 'Tunai',
-                style: primaryTextStyle.copyWith(
+                style: blackColorStyle.copyWith(
                   fontSize: 18,
                   fontWeight: semiBold,
                 ),
@@ -147,7 +147,7 @@ class StatementPage extends StatelessWidget {
             children: [
               Text(
                 'Transfer',
-                style: primaryTextStyle.copyWith(
+                style: blackColorStyle.copyWith(
                   fontSize: 18,
                   fontWeight: semiBold,
                 ),
@@ -189,7 +189,7 @@ class StatementPage extends StatelessWidget {
             children: [
               Text(
                 'Otomatis',
-                style: primaryTextStyle.copyWith(
+                style: blackColorStyle.copyWith(
                   fontSize: 18,
                   fontWeight: semiBold,
                 ),
@@ -225,7 +225,7 @@ class StatementPage extends StatelessWidget {
               )),
           child: Text(
             'Download PDF',
-            style: primaryTextStyle.copyWith(
+            style: blackColorStyle.copyWith(
               fontSize: 18,
               fontWeight: regular,
             ),

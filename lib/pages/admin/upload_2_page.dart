@@ -71,7 +71,7 @@ class _Upload2PageState extends State<Upload2Page> {
           margin: EdgeInsets.only(top: 12),
           padding: EdgeInsets.symmetric(horizontal: 6, vertical: 4),
           decoration: BoxDecoration(
-            color: bgColor3,
+            color: bgColor5,
             borderRadius: BorderRadius.circular(8),
           ),
           child: Row(
@@ -124,13 +124,13 @@ class _Upload2PageState extends State<Upload2Page> {
       padding: EdgeInsets.symmetric(horizontal: 16),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
-        color: bgColor3,
+        color: bgColor5,
       ),
       child: DropdownButton<String>(
         isExpanded: true,
         hint: Text(
           "Pilih Kontrakan",
-          style: primaryTextStyle.copyWith(fontSize: 14),
+          style: blackColorStyle.copyWith(fontSize: 14),
         ),
         value: _selectedKontrakan,
         onChanged: (String? newValue) {
@@ -138,7 +138,7 @@ class _Upload2PageState extends State<Upload2Page> {
             _selectedKontrakan = newValue;
           });
         },
-        dropdownColor: bgColor3,
+        dropdownColor: bgColor1,
         items: <String>['Kontrakan A', 'Kontrakan B']
             .map<DropdownMenuItem<String>>((String value) {
           return DropdownMenuItem<String>(
@@ -160,7 +160,7 @@ class _Upload2PageState extends State<Upload2Page> {
       child: TextButton(
         onPressed: _pickImages,
         style: TextButton.styleFrom(
-          backgroundColor: bgColor3,
+          backgroundColor: bgColor5,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
           ),
@@ -170,7 +170,7 @@ class _Upload2PageState extends State<Upload2Page> {
           children: [
             Text(
               'Upload Image',
-              style: primaryTextStyle.copyWith(
+              style: blackColorStyle.copyWith(
                 fontSize: 14,
                 fontWeight: medium,
               ),

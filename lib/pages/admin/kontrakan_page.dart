@@ -111,7 +111,7 @@ class KontrakanPage extends StatelessWidget {
                         ),
                         TextButton(
                           onPressed: () {
-                            // Logic to delete the house
+                            // Logic to delete the house with pop up
                           },
                           child: Text(
                             'Delete',

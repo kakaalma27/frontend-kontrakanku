@@ -71,7 +71,7 @@ class _UploadPageState extends State<Upload1Page> {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor4,
+        color: bgColor5,
         borderRadius: BorderRadius.circular(8),
       ),
       child: TextFormField(
@@ -90,7 +90,7 @@ class _UploadPageState extends State<Upload1Page> {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor4,
+        color: bgColor5,
         borderRadius: BorderRadius.circular(8),
       ),
       child: TextFormField(
@@ -110,7 +110,7 @@ class _UploadPageState extends State<Upload1Page> {
       margin: EdgeInsets.only(top: 12),
       padding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor4,
+        color: bgColor5,
         borderRadius: BorderRadius.circular(12),
       ),
       child: TextFormField(
@@ -130,7 +130,7 @@ class _UploadPageState extends State<Upload1Page> {
       margin: EdgeInsets.only(top: 12),
       padding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor4,
+        color: bgColor5,
         borderRadius: BorderRadius.circular(8),
       ),
       child: TextFormField(
@@ -150,7 +150,7 @@ class _UploadPageState extends State<Upload1Page> {
       margin: EdgeInsets.only(top: 12),
       padding: EdgeInsets.symmetric(horizontal: 12, vertical: 16),
       decoration: BoxDecoration(
-        color: bgColor4,
+        color: bgColor5,
         borderRadius: BorderRadius.circular(8),
       ),
       child: TextFormField(
@@ -170,7 +170,7 @@ class _UploadPageState extends State<Upload1Page> {
       margin: EdgeInsets.only(top: 12),
       padding: EdgeInsets.symmetric(horizontal: 12, vertical: 16),
       decoration: BoxDecoration(
-        color: bgColor4,
+        color: bgColor5,
         borderRadius: BorderRadius.circular(8),
       ),
       child: TextFormField(
@@ -191,7 +191,7 @@ class _UploadPageState extends State<Upload1Page> {
       margin: EdgeInsets.only(top: 12),
       padding: EdgeInsets.symmetric(horizontal: 12),
       decoration: BoxDecoration(
-        color: bgColor4,
+        color: bgColor5,
         borderRadius: BorderRadius.circular(12),
       ),
       child: DropdownButton<String>(
@@ -229,7 +229,7 @@ class _UploadPageState extends State<Upload1Page> {
       margin: EdgeInsets.only(top: 12),
       padding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor4,
+        color: bgColor5,
         borderRadius: BorderRadius.circular(8),
       ),
       child: TextFormField(
@@ -276,7 +276,7 @@ class _UploadPageState extends State<Upload1Page> {
           margin: EdgeInsets.only(top: 12),
           padding: EdgeInsets.symmetric(horizontal: 6, vertical: 4),
           decoration: BoxDecoration(
-            color: bgColor3,
+            color: bgColor5,
             borderRadius: BorderRadius.circular(8),
           ),
           child: Row(
@@ -351,7 +351,7 @@ class _UploadPageState extends State<Upload1Page> {
                 Expanded(child: inputQuantity())
               ],
             ),
-            // selectedButton(context),
+            selectedButton(context),
             submitButton(context),
           ],
         ),
@@ -362,7 +362,7 @@ class _UploadPageState extends State<Upload1Page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: bgColor2,
+      backgroundColor: bgColor1,
       appBar: header() as PreferredSizeWidget,
       body: content(context),
       resizeToAvoidBottomInset: false,

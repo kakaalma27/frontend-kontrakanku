@@ -55,7 +55,7 @@ class _PenyewaPageState extends State<PenyewaPage> {
 
   Widget header(context) {
     return AppBar(
-      backgroundColor: bgColor1,
+      backgroundColor: bgColor4,
       leading: IconButton(
         onPressed: () {
           Navigator.pop(context);
@@ -84,9 +84,9 @@ class _PenyewaPageState extends State<PenyewaPage> {
               onChanged: handleSearch,
               decoration: InputDecoration(
                 hintText: 'Cari nama',
-                hintStyle: primaryTextStyle.copyWith(fontSize: 14),
+                hintStyle: secondaryTextStyle.copyWith(fontSize: 14),
                 filled: true,
-                fillColor: bgColor1,
+                fillColor: bgColor2,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
                   borderSide: BorderSide.none,
@@ -103,7 +103,7 @@ class _PenyewaPageState extends State<PenyewaPage> {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 16),
       margin: EdgeInsets.only(left: defaultMargin, right: defaultMargin),
-      color: bgColor2,
+      color: bgColor4,
       child: Row(
         children: [
           SizedBox(width: 50, child: Text('No', style: headerTextStyle())),
@@ -125,8 +125,7 @@ class _PenyewaPageState extends State<PenyewaPage> {
           padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 16),
           margin: EdgeInsets.only(left: defaultMargin, right: defaultMargin),
           decoration: BoxDecoration(
-            color: bgColor1,
-            borderRadius: BorderRadius.circular(8),
+            color: bgColor4,
           ),
           child: Row(
             children: [
@@ -172,7 +171,7 @@ class _PenyewaPageState extends State<PenyewaPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: bgColor3,
+      backgroundColor: bgColor1,
       appBar: header(context) as PreferredSizeWidget,
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,

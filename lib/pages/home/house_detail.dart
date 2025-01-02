@@ -216,8 +216,7 @@ class HouseDetail extends StatelessWidget {
 
   Widget alamat(context) {
     return Container(
-      padding: EdgeInsets.only(
-          right: defaultMargin, left: defaultMargin, top: defaultMargin),
+      padding: EdgeInsets.all(defaultMargin),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -271,9 +270,6 @@ class HouseDetail extends StatelessWidget {
                     fontWeight: semiBold,
                   ),
                 ),
-              ),
-              SizedBox(
-                height: 40,
               ),
             ],
           )

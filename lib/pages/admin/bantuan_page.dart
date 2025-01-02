@@ -141,7 +141,6 @@ class _BantuanPageState extends State<BantuanPage> {
             margin: EdgeInsets.only(left: defaultMargin, right: defaultMargin),
             decoration: BoxDecoration(
               color: bgColor4,
-              borderRadius: BorderRadius.circular(8),
             ),
             child: Row(
               children: [
@@ -173,7 +172,7 @@ class _BantuanPageState extends State<BantuanPage> {
     }
 
     return Scaffold(
-      backgroundColor: bgColor3,
+      backgroundColor: bgColor1,
       appBar: header() as PreferredSizeWidget,
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,

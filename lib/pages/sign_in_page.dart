@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:frontend_kontrakan/theme.dart';
 import 'package:frontend_kontrakan/providers/auth_provider.dart';
+import 'package:frontend_kontrakan/services/auth_services.dart'; // Import AuthServices
 
 class SignInPage extends StatefulWidget {
   @override
@@ -11,6 +12,30 @@ class SignInPage extends StatefulWidget {
 class _SignInPageState extends State<SignInPage> {
   TextEditingController emailController = TextEditingController(text: '');
   TextEditingController passwordController = TextEditingController(text: '');
+  void _checkAuthentication() async {
+    final authServices = AuthServices();
+
+    bool isAuthenticated = await authServices.isAuthenticated();
+
+    if (isAuthenticated) {
+      // Check the user's role after authentication
+      final authProvider = Provider.of<AuthProvider>(context, listen: false);
+      int? role = authProvider.user.role;
+
+      // Navigate based on the role
+      if (role == 0) {
+        Navigator.pushReplacementNamed(context, '/home');
+      } else if (role == 1) {
+        Navigator.pushReplacementNamed(context, '/home-admin');
+      } else {
+        Navigator.pushReplacementNamed(context, '/sign-in');
+      }
+    } else {
+      // If the user is not authenticated, navigate to sign-in page
+      Navigator.pushReplacementNamed(context, '/sign-in');
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     AuthProvider authProvider = Provider.of<AuthProvider>(context);
@@ -145,7 +170,7 @@ class _SignInPageState extends State<SignInPage> {
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
           ),
-          child: Text('Sign In',
+          child: Text('Masuk',
               style: primaryTextStyle.copyWith(
                   fontSize: 16, fontWeight: semiBold)),
         ),

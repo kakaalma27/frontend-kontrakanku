@@ -32,7 +32,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
 
     Widget header() {
       return AppBar(
-        backgroundColor: bgColor4,
+        backgroundColor: bgColor3,
         centerTitle: true,
         leading: IconButton(
           onPressed: () {
@@ -45,6 +45,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
           'Edit Profile',
           style: primaryTextStyle.copyWith(
             fontSize: 18,
+            fontWeight: medium,
           ),
         ),
         elevation: 0,

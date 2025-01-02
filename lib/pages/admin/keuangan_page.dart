@@ -29,7 +29,7 @@ class KeuanganPage extends StatelessWidget {
           left: defaultMargin, right: defaultMargin, top: defaultMargin),
       padding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor1,
+        color: bgColor2,
         borderRadius: BorderRadius.circular(12),
       ),
       child: Row(
@@ -188,7 +188,7 @@ class KeuanganPage extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(8.0),
       decoration: BoxDecoration(
-        color: bgColor1,
+        color: bgColor2,
         borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(12),
           bottomRight: Radius.circular(12),
@@ -215,7 +215,7 @@ class KeuanganPage extends StatelessWidget {
         top: defaultMargin,
       ),
       decoration: BoxDecoration(
-        color: primaryColor,
+        color: bgColor3,
         borderRadius: BorderRadius.circular(12),
       ),
       child: SingleChildScrollView(
@@ -241,7 +241,7 @@ class KeuanganPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: bgColor3,
+      backgroundColor: bgColor1,
       appBar: header(context) as PreferredSizeWidget,
       // bottomNavigationBar: costomBattoNav(),
       body: content(context),
